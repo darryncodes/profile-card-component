@@ -1,0 +1,81 @@
+.card {
+    position: relative;
+
+    background-color: $white;
+    width: 100%;
+    max-width: 33rem;
+    padding: 3rem 2rem;
+
+    border-radius: 2rem;
+    overflow: hidden;
+
+    &__header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url(../img/bg-pattern-card.svg);
+        height: 13rem;
+        width: 100%;
+
+        @media only screen and (max-width: $bp-mobile) {
+            top: -2px;
+        }
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 3rem;
+        margin-top: 1rem;
+        height: 25rem;
+    }
+
+    &__image {
+        height: 10rem;
+        width: 10rem;
+        border-radius: 50%;
+        border: 5px solid $white;
+        z-index: 1;
+    }
+
+    &__stats::before {
+        content: "";
+        height: 1px;
+        background: $dark-grey;
+        opacity: 0.3;
+        width: 115%;
+        position: absolute;
+        top: 0;
+        left: -20px;
+    }
+
+    &__stats {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        padding: 4rem 2rem 0 2rem;
+        padding-bottom: 0;
+    }
+
+    &__list {
+        list-style: none;
+        text-align: center;
+    }
+
+    &__stat {
+        color: $black;
+        font-size: 1.9rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    &__category {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+    }
+}

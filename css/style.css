@@ -1,0 +1,208 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 40.625em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  background-color: #19a2ae;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.55);
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: absolute;
+  width: 50rem;
+  height: 50rem;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 40.625em) {
+  body::before,
+  body::after {
+    width: 45rem;
+    height: 45rem;
+  }
+}
+
+body::before {
+  background: url(../img/bg-pattern-top.svg);
+  top: 0;
+  left: 0;
+  -webkit-transform: rotate(90deg) scaleX(-1);
+          transform: rotate(90deg) scaleX(-1);
+}
+
+body::after {
+  background: url(../img/bg-pattern-bottom.svg);
+  bottom: 0;
+  right: 0;
+  height: 55rem;
+}
+
+h1 {
+  color: #000;
+  font-size: 1.9rem;
+  letter-spacing: 1px;
+}
+
+span,
+p {
+  color: rgba(0, 0, 0, 0.55);
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+.attribution {
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.55);
+  margin-top: 5rem;
+}
+
+.attribution__link {
+  color: #000;
+}
+
+.attribution__link:hover {
+  text-decoration: none;
+}
+
+.card {
+  position: relative;
+  background-color: #fefefe;
+  width: 100%;
+  max-width: 33rem;
+  padding: 3rem 2rem;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.card__header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/bg-pattern-card.svg);
+  height: 13rem;
+  width: 100%;
+}
+
+@media only screen and (max-width: 40.625em) {
+  .card__header::before {
+    top: -2px;
+  }
+}
+
+.card__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem;
+  margin-top: 1rem;
+  height: 25rem;
+}
+
+.card__image {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  border: 5px solid #fefefe;
+  z-index: 1;
+}
+
+.card__stats::before {
+  content: "";
+  height: 1px;
+  background: #969696;
+  opacity: 0.3;
+  width: 115%;
+  position: absolute;
+  top: 0;
+  left: -20px;
+}
+
+.card__stats {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 4rem 2rem 0 2rem;
+  padding-bottom: 0;
+}
+
+.card__list {
+  list-style: none;
+  text-align: center;
+}
+
+.card__stat {
+  color: #000;
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.card__category {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
