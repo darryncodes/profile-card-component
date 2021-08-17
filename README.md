@@ -44,7 +44,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 ### What I learned
 
 -   How to work with ::before and ::after pseudo elements
--   The different between pseudo classes and pseudo elements
+-   The difference between pseudo classes and pseudo elements
 -   Continuing to improve use of semantic html for exmaple the unordered list usage
 
 ### Useful resources
