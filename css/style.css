@@ -12,13 +12,11 @@ html {
           box-sizing: border-box;
   font-size: 62.5%;
 }
-
 @media only screen and (max-width: 56.25em) {
   html {
     font-size: 56.25%;
   }
 }
-
 @media only screen and (max-width: 40.625em) {
   html {
     font-size: 50%;
@@ -55,10 +53,9 @@ body::after {
   height: 50rem;
   z-index: -1;
 }
-
 @media only screen and (max-width: 40.625em) {
   body::before,
-  body::after {
+body::after {
     width: 45rem;
     height: 45rem;
   }
@@ -101,11 +98,9 @@ p {
   color: rgba(0, 0, 0, 0.55);
   margin-top: 5rem;
 }
-
 .attribution__link {
   color: #000;
 }
-
 .attribution__link:hover {
   text-decoration: none;
 }
@@ -119,7 +114,6 @@ p {
   border-radius: 2rem;
   overflow: hidden;
 }
-
 .card__header::before {
   content: "";
   position: absolute;
@@ -129,13 +123,11 @@ p {
   height: 13rem;
   width: 100%;
 }
-
 @media only screen and (max-width: 40.625em) {
   .card__header::before {
     top: -2px;
   }
 }
-
 .card__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -154,7 +146,6 @@ p {
   margin-top: 1rem;
   height: 25rem;
 }
-
 .card__image {
   height: 10rem;
   width: 10rem;
@@ -162,7 +153,6 @@ p {
   border: 5px solid #fefefe;
   z-index: 1;
 }
-
 .card__stats::before {
   content: "";
   height: 1px;
@@ -173,7 +163,6 @@ p {
   top: 0;
   left: -20px;
 }
-
 .card__stats {
   position: relative;
   display: -webkit-box;
@@ -189,19 +178,16 @@ p {
   padding: 4rem 2rem 0 2rem;
   padding-bottom: 0;
 }
-
 .card__list {
   list-style: none;
   text-align: center;
 }
-
 .card__stat {
   color: #000;
   font-size: 1.9rem;
   font-weight: 700;
   letter-spacing: 1px;
 }
-
 .card__category {
   font-size: 1.2rem;
   margin-top: 0.5rem;
