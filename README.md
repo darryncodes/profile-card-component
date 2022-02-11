@@ -29,7 +29,6 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 -   [GitHub repo](https://github.com/darryncodes/profile-card-component)
 -   [Solution URL](https://darryncodes.github.io/profile-card-component/)
--   [Live Site URL](https://www.darryncodes.co.uk/pages/profile-card-component.html)
 
 ## My process
 
